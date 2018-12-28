@@ -1,0 +1,62 @@
+<div id="overlay"></div>
+<div id="over_overlay">
+	<div id="overlay_file" class="popup">
+		<div class="overlay_title">
+			<span>Add New House</span>
+			<img src="img/close.png" width="20px;" class="overlay_close" />
+		</div>
+		<div class="overlay_body">
+			<form id="sbm_form" action="index.php" method="POST">
+	            <table>
+	                <tr>
+	                    <td>House Image : </td>
+	                    <td><button id="uploadBtn1" class="btn btn-large btn-primary">Choose File</button></td>
+	                </tr>
+	                <tr>
+	                    <td>House Thumbnail : </td>
+	                    <td><button id="uploadBtn2" class="btn btn-large btn-primary">Choose File</button></td>
+	                </tr>
+	            </table>
+	            
+	            <div id="progressOuter" class="progress progress-striped active" style="display:none;">
+	                <div id="progressBar" class="progress-bar progress-bar-success"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+	            </div>
+	        </form>
+			<br />
+			<center><input type="button" class="overlay_add" id="btn_addimg"  value="Add"/></center>
+		</div>
+	</div>
+	<div id="overlay_download" class="popup">
+		<div class="overlay_title">
+			<span>Download Video</span>
+			<img src="img/close.png" width="20px;" class="overlay_close" />
+		</div>
+		<div class="overlay_body">
+			<p class="info">Please download the video from bellow link.</p>
+			<center><a href="#" id="download_link">Download Video Here</a></center>
+		</div>
+	</div>
+	<div id="overlay_video" class="popup">
+		<div class="overlay_title">
+			<span>Video Export Option</span>
+			<img src="img/close.png" width="20px;" class="overlay_close" />
+		</div>
+		<div class="overlay_body">
+			<table>
+				<tr>
+					<td>Video Width : </td>
+					<td><input type="number" id="txt_video_width" value="800"></td>
+				</tr>
+				<tr>
+					<td>Video Height : </td>
+					<td><input type="number" id="txt_video_height" value="600"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<center><input type="button" id="btn_save_video" value="Save Video"></center>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
